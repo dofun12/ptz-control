@@ -63,7 +63,7 @@ if __name__ == '__main__':
         sys.exit(1)
     parser = argparse.ArgumentParser(description='Move the camera.')
     parser.add_argument('host', type=str, help='The host address of the camera')
-    parser.add_argument('direction', metavar='--d', type=str, choices=['up', 'down', 'left', 'right'],
+    parser.add_argument('direction', type=str, choices=['up', 'down', 'left', 'right'],
                         help='The direction to move the camera')
     parser.add_argument('rate', type=float, help='The rate of movement')
 
